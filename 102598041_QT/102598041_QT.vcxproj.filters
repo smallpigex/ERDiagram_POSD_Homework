@@ -1,0 +1,435 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="main">
+      <UniqueIdentifier>{92e9165e-9c1c-474f-be1f-62c60bf13716}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{f8ad64ff-3392-46b0-a340-3e02ff8c3a7a}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{b9d9d00b-7207-47ad-9b0f-7f5da32ee777}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Header Files\GUI Header Files">
+      <UniqueIdentifier>{ea280f13-02b3-4aae-aca3-ed3c006d539e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GUI Source File">
+      <UniqueIdentifier>{de732152-6669-4b8c-8acb-37783373ff16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\State">
+      <UniqueIdentifier>{3f90301f-ff93-4531-831b-53a69b787116}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\State">
+      <UniqueIdentifier>{f2c47c32-4146-457d-8c4f-e427b58e555e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ERModel">
+      <UniqueIdentifier>{19bc89c0-2d13-49a6-8447-c1fac8a7a9c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Command">
+      <UniqueIdentifier>{f6c963ad-3d9b-4d5a-996b-133add2056bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Command">
+      <UniqueIdentifier>{f3a5a5db-4589-411c-b793-7e1723426dcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Visitor">
+      <UniqueIdentifier>{6ae6c229-d01b-42cd-9ba7-512b79ccf13a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Visitor">
+      <UniqueIdentifier>{eaab3e71-6a91-44b8-aae7-f3800b0028a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Component">
+      <UniqueIdentifier>{c812cfe1-418f-4eae-8705-82a78a85c7f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Component">
+      <UniqueIdentifier>{436bdaeb-e8bc-4ad1-8ee1-a5822199712f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\102598041_new\TextUIController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\102598041_new\ComponentData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\102598041_new\ComponentFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\102598041_new\ConnectionData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\102598041_new\ConstString.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\102598041_new\Convertor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\102598041_new\EntityData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\102598041_new\LoadFiles.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\102598041_new\MessageOfConstInteger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\102598041_new\ObserverTextUIInterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\102598041_new\Presentation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\102598041_new\SaveFiles.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\102598041_new\TextUI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GUIRelationship.cpp">
+      <Filter>Source Files\GUI Source File</Filter>
+    </ClCompile>
+    <ClCompile Include="GUIAttribute.cpp">
+      <Filter>Source Files\GUI Source File</Filter>
+    </ClCompile>
+    <ClCompile Include="GUIComponent.cpp">
+      <Filter>Source Files\GUI Source File</Filter>
+    </ClCompile>
+    <ClCompile Include="GUIConnection.cpp">
+      <Filter>Source Files\GUI Source File</Filter>
+    </ClCompile>
+    <ClCompile Include="GUIEntity.cpp">
+      <Filter>Source Files\GUI Source File</Filter>
+    </ClCompile>
+    <ClCompile Include="GUIComponentFactory.cpp">
+      <Filter>Source Files\GUI Source File</Filter>
+    </ClCompile>
+    <ClCompile Include="QTConstString.cpp">
+      <Filter>Source Files\GUI Source File</Filter>
+    </ClCompile>
+    <ClCompile Include="GUIComponentManager.cpp">
+      <Filter>Source Files\GUI Source File</Filter>
+    </ClCompile>
+    <ClCompile Include="GUIPresentation.cpp">
+      <Filter>Source Files\GUI Source File</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_GUIMainWindow.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_GUIMainWindow.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GUIMainWindow.cpp">
+      <Filter>Source Files\GUI Source File</Filter>
+    </ClCompile>
+    <ClCompile Include="AddNodeState.cpp">
+      <Filter>Source Files\State</Filter>
+    </ClCompile>
+    <ClCompile Include="ConnectState.cpp">
+      <Filter>Source Files\State</Filter>
+    </ClCompile>
+    <ClCompile Include="State.cpp">
+      <Filter>Source Files\State</Filter>
+    </ClCompile>
+    <ClCompile Include="PointState.cpp">
+      <Filter>Source Files\State</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Source Files\GUI Source File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\102598041_new\ERModel.cpp">
+      <Filter>Source Files\ERModel</Filter>
+    </ClCompile>
+    <ClCompile Include="GUIObserver.cpp">
+      <Filter>Source Files\GUI Source File</Filter>
+    </ClCompile>
+    <ClCompile Include="GUIPresentationSubject.cpp">
+      <Filter>Source Files\GUI Source File</Filter>
+    </ClCompile>
+    <ClCompile Include="MainWindowObserver.cpp">
+      <Filter>Source Files\GUI Source File</Filter>
+    </ClCompile>
+    <ClCompile Include="MainWindowSubject.cpp">
+      <Filter>Source Files\GUI Source File</Filter>
+    </ClCompile>
+    <ClCompile Include="GUIPreviewComponentFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PrimaryKeyState.cpp">
+      <Filter>Source Files\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\102598041_new\Command.cpp">
+      <Filter>Source Files\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="..\102598041_new\CommandManager.cpp">
+      <Filter>Source Files\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="..\102598041_new\AddComponentCmd.cpp">
+      <Filter>Source Files\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="..\102598041_new\ConnectComponentsCmd.cpp">
+      <Filter>Source Files\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="..\102598041_new\DeleteComponentCmd.cpp">
+      <Filter>Source Files\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="EditNameOfComponent.cpp">
+      <Filter>Source Files\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="..\102598041_new\ERModeSubject.cpp">
+      <Filter>Source Files\ERModel</Filter>
+    </ClCompile>
+    <ClCompile Include="SetPrimaryKeyCmd.cpp">
+      <Filter>Source Files\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="MainWindowSubjectForERModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ComponentVisitor.cpp">
+      <Filter>Source Files\Visitor</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveXmlComponentVisitor.cpp">
+      <Filter>Source Files\Visitor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\102598041_new\Components.cpp">
+      <Filter>Source Files\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\102598041_new\Connection.cpp">
+      <Filter>Source Files\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\102598041_new\Entity.cpp">
+      <Filter>Source Files\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\102598041_new\Node.cpp">
+      <Filter>Source Files\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\102598041_new\Attributes.cpp">
+      <Filter>Source Files\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\102598041_new\NullComponent.cpp">
+      <Filter>Source Files\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\102598041_new\Relationship.cpp">
+      <Filter>Source Files\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveComponentVisitor.cpp">
+      <Filter>Source Files\Visitor</Filter>
+    </ClCompile>
+    <ClCompile Include="CutComponents.cpp">
+      <Filter>Source Files\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="MoveComponents.cpp">
+      <Filter>Source Files\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="PasteComponents.cpp">
+      <Filter>Source Files\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="ComponentPoint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\102598041_new\TextUIController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\102598041_new\ComponentData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\102598041_new\ComponentFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\102598041_new\ConnectionData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\102598041_new\Convertor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\102598041_new\EntityData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\102598041_new\ERModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\102598041_new\LoadFiles.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\102598041_new\MessageOfConstInteger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\102598041_new\MessageOfConstString.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\102598041_new\ObserverTextUIInterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\102598041_new\Presentation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\102598041_new\SaveFiles.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\102598041_new\TextUI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GUIRelationship.h">
+      <Filter>Header Files\GUI Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GUIAttribute.h">
+      <Filter>Header Files\GUI Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GUIComponent.h">
+      <Filter>Header Files\GUI Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GUIConnection.h">
+      <Filter>Header Files\GUI Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GUIEntity.h">
+      <Filter>Header Files\GUI Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GUIComponentFactory.h">
+      <Filter>Header Files\GUI Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="QTConstString.h">
+      <Filter>Header Files\GUI Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GUIComponentManager.h">
+      <Filter>Header Files\GUI Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GUIPresentation.h">
+      <Filter>Header Files\GUI Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PointState.h">
+      <Filter>Header Files\State</Filter>
+    </ClInclude>
+    <ClInclude Include="State.h">
+      <Filter>Header Files\State</Filter>
+    </ClInclude>
+    <ClInclude Include="AddNodeState.h">
+      <Filter>Header Files\State</Filter>
+    </ClInclude>
+    <ClInclude Include="ConnectState.h">
+      <Filter>Header Files\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Header Files\GUI Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GUIPresentationSubject.h">
+      <Filter>Header Files\GUI Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GUIObserver.h">
+      <Filter>Header Files\GUI Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainWindowObserver.h">
+      <Filter>Header Files\GUI Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainWindowSubject.h">
+      <Filter>Header Files\GUI Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GUIPreviewComponentFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PrimaryKeyState.h">
+      <Filter>Header Files\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\102598041_new\Command.h">
+      <Filter>Header Files\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="..\102598041_new\CommandManager.h">
+      <Filter>Header Files\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="..\102598041_new\DeleteComponentCmd.h">
+      <Filter>Header Files\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="..\102598041_new\AddComponentCmd.h">
+      <Filter>Header Files\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="EditNameOfComponent.h">
+      <Filter>Header Files\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="..\102598041_new\ConnectComponentsCmd.h">
+      <Filter>Header Files\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="..\102598041_new\ERModeSubject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SetPrimaryKeyCmd.h">
+      <Filter>Header Files\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="MainWindowSubjectForERModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ComponentVisitor.h">
+      <Filter>Header Files\Visitor</Filter>
+    </ClInclude>
+    <ClInclude Include="SaveXmlComponentVisitor.h">
+      <Filter>Header Files\Visitor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\102598041_new\Attributes.h">
+      <Filter>Header Files\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\102598041_new\Components.h">
+      <Filter>Header Files\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\102598041_new\Connection.h">
+      <Filter>Header Files\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\102598041_new\Entity.h">
+      <Filter>Header Files\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\102598041_new\Node.h">
+      <Filter>Header Files\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\102598041_new\Relationship.h">
+      <Filter>Header Files\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\102598041_new\NullComponent.h">
+      <Filter>Header Files\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="SaveComponentVisitor.h">
+      <Filter>Header Files\Visitor</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CutComponents.h">
+      <Filter>Header Files\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="MoveComponents.h">
+      <Filter>Header Files\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="PasteComponents.h">
+      <Filter>Header Files\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="ComponentPoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="GUIMainWindow.h">
+      <Filter>Header Files\GUI Header Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

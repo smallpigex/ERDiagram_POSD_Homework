@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5CBE9564-75C6-4BB1-8674-A643C9B17A1B}</ProjectGuid>
+    <RootNamespace>My102598041_new</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\gtest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>C:\gtest\lib\gtestd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <Profile>true</Profile>
+      <OptimizeReferences>false</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\102598041_QT\ComponentPoint.cpp" />
+    <ClCompile Include="..\102598041_QT\ComponentVisitor.cpp" />
+    <ClCompile Include="..\102598041_QT\CutComponents.cpp" />
+    <ClCompile Include="..\102598041_QT\EditNameOfComponent.cpp" />
+    <ClCompile Include="..\102598041_QT\MainWindowSubjectForERModel.cpp" />
+    <ClCompile Include="..\102598041_QT\MoveComponents.cpp" />
+    <ClCompile Include="..\102598041_QT\PasteComponents.cpp" />
+    <ClCompile Include="..\102598041_QT\SaveComponentVisitor.cpp" />
+    <ClCompile Include="..\102598041_QT\SaveXmlComponentVisitor.cpp" />
+    <ClCompile Include="..\102598041_QT\SetPrimaryKeyCmd.cpp" />
+    <ClCompile Include="AddComponentCmd.cpp" />
+    <ClCompile Include="Attributes.cpp" />
+    <ClCompile Include="Command.cpp" />
+    <ClCompile Include="CommandManager.cpp" />
+    <ClCompile Include="ComponentData.cpp" />
+    <ClCompile Include="ComponentFactory.cpp" />
+    <ClCompile Include="Components.cpp" />
+    <ClCompile Include="ConnectComponentsCmd.cpp" />
+    <ClCompile Include="Connection.cpp" />
+    <ClCompile Include="ConnectionData.cpp" />
+    <ClCompile Include="ConstString.cpp" />
+    <ClCompile Include="Convertor.cpp" />
+    <ClCompile Include="DeleteComponentCmd.cpp" />
+    <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="EntityData.cpp" />
+    <ClCompile Include="ERModel.cpp" />
+    <ClCompile Include="ERModeSubject.cpp" />
+    <ClCompile Include="LoadFiles.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MessageOfConstInteger.cpp" />
+    <ClCompile Include="Node.cpp" />
+    <ClCompile Include="NullComponent.cpp" />
+    <ClCompile Include="ObserverTextUIInterface.cpp" />
+    <ClCompile Include="Presentation.cpp" />
+    <ClCompile Include="Relationship.cpp" />
+    <ClCompile Include="SaveFiles.cpp" />
+    <ClCompile Include="TextUI.cpp" />
+    <ClCompile Include="TextUIController.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\102598041_QT\ComponentPoint.h" />
+    <ClInclude Include="..\102598041_QT\ComponentVisitor.h" />
+    <ClInclude Include="..\102598041_QT\CutComponents.h" />
+    <ClInclude Include="..\102598041_QT\EditNameOfComponent.h" />
+    <ClInclude Include="..\102598041_QT\MainWindowSubjectForERModel.h" />
+    <ClInclude Include="..\102598041_QT\MoveComponents.h" />
+    <ClInclude Include="..\102598041_QT\PasteComponents.h" />
+    <ClInclude Include="..\102598041_QT\SaveComponentVisitor.h" />
+    <ClInclude Include="..\102598041_QT\SaveXmlComponentVisitor.h" />
+    <ClInclude Include="..\102598041_QT\SetPrimaryKeyCmd.h" />
+    <ClInclude Include="AddComponentCmd.h" />
+    <ClInclude Include="Attributes.h" />
+    <ClInclude Include="Command.h" />
+    <ClInclude Include="CommandManager.h" />
+    <ClInclude Include="ComponentData.h" />
+    <ClInclude Include="ComponentFactory.h" />
+    <ClInclude Include="Components.h" />
+    <ClInclude Include="ConnectComponentsCmd.h" />
+    <ClInclude Include="Connection.h" />
+    <ClInclude Include="ConnectionData.h" />
+    <ClInclude Include="EntityData.h" />
+    <ClInclude Include="ERModeSubject.h" />
+    <ClInclude Include="LoadFiles.h" />
+    <ClInclude Include="MessageOfConstString.h" />
+    <ClInclude Include="Convertor.h" />
+    <ClInclude Include="DeleteComponentCmd.h" />
+    <ClInclude Include="Entity.h" />
+    <ClInclude Include="ERModel.h" />
+    <ClInclude Include="MessageOfConstInteger.h" />
+    <ClInclude Include="Node.h" />
+    <ClInclude Include="NullComponent.h" />
+    <ClInclude Include="ObserverTextUIInterface.h" />
+    <ClInclude Include="Presentation.h" />
+    <ClInclude Include="Relationship.h" />
+    <ClInclude Include="SaveFiles.h" />
+    <ClInclude Include="TextUI.h" />
+    <ClInclude Include="TextUIController.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

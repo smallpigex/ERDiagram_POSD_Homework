@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F09550EE-B119-43F3-9721-717FF69FBF5B}</ProjectGuid>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>C:\gtest\include;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>qtmaind.lib;QtCored4.lib;QtGuid4.lib;C:\gtest\lib\gtestd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>qtmain.lib;QtCore4.lib;QtGui4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\102598041_new\AddComponentCmd.cpp" />
+    <ClCompile Include="..\102598041_new\Attributes.cpp" />
+    <ClCompile Include="..\102598041_new\Command.cpp" />
+    <ClCompile Include="..\102598041_new\CommandManager.cpp" />
+    <ClCompile Include="..\102598041_new\ComponentData.cpp" />
+    <ClCompile Include="..\102598041_new\ComponentFactory.cpp" />
+    <ClCompile Include="..\102598041_new\Components.cpp" />
+    <ClCompile Include="..\102598041_new\ConnectComponentsCmd.cpp" />
+    <ClCompile Include="..\102598041_new\Connection.cpp" />
+    <ClCompile Include="..\102598041_new\ConnectionData.cpp" />
+    <ClCompile Include="..\102598041_new\ConstString.cpp" />
+    <ClCompile Include="..\102598041_new\Convertor.cpp" />
+    <ClCompile Include="..\102598041_new\DeleteComponentCmd.cpp" />
+    <ClCompile Include="..\102598041_new\Entity.cpp" />
+    <ClCompile Include="..\102598041_new\EntityData.cpp" />
+    <ClCompile Include="..\102598041_new\ERModel.cpp" />
+    <ClCompile Include="..\102598041_new\ERModeSubject.cpp" />
+    <ClCompile Include="..\102598041_new\LoadFiles.cpp" />
+    <ClCompile Include="..\102598041_new\MessageOfConstInteger.cpp" />
+    <ClCompile Include="..\102598041_new\Node.cpp" />
+    <ClCompile Include="..\102598041_new\NullComponent.cpp" />
+    <ClCompile Include="..\102598041_new\ObserverTextUIInterface.cpp" />
+    <ClCompile Include="..\102598041_new\Presentation.cpp" />
+    <ClCompile Include="..\102598041_new\Relationship.cpp" />
+    <ClCompile Include="..\102598041_new\SaveFiles.cpp" />
+    <ClCompile Include="..\102598041_new\TextUI.cpp" />
+    <ClCompile Include="..\102598041_new\TextUIController.cpp" />
+    <ClCompile Include="AddNodeState.cpp" />
+    <ClCompile Include="ComponentPoint.cpp" />
+    <ClCompile Include="ComponentVisitor.cpp" />
+    <ClCompile Include="ConnectState.cpp" />
+    <ClCompile Include="CutComponents.cpp" />
+    <ClCompile Include="EditNameOfComponent.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_GUIMainWindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_GUIMainWindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GUIMainWindow.cpp" />
+    <ClCompile Include="GUIAttribute.cpp" />
+    <ClCompile Include="GUIComponent.cpp" />
+    <ClCompile Include="GUIComponentFactory.cpp" />
+    <ClCompile Include="GUIConnection.cpp" />
+    <ClCompile Include="GUIEntity.cpp" />
+    <ClCompile Include="GUIObserver.cpp" />
+    <ClCompile Include="GUIPresentation.cpp" />
+    <ClCompile Include="GUIPresentationSubject.cpp" />
+    <ClCompile Include="GUIPreviewComponentFactory.cpp" />
+    <ClCompile Include="GUIRelationship.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="GUIComponentManager.cpp" />
+    <ClCompile Include="MainWindowObserver.cpp" />
+    <ClCompile Include="MainWindowSubject.cpp" />
+    <ClCompile Include="MainWindowSubjectForERModel.cpp" />
+    <ClCompile Include="MoveComponents.cpp" />
+    <ClCompile Include="PasteComponents.cpp" />
+    <ClCompile Include="PointState.cpp" />
+    <ClCompile Include="PrimaryKeyState.cpp" />
+    <ClCompile Include="QTConstString.cpp" />
+    <ClCompile Include="SaveComponentVisitor.cpp" />
+    <ClCompile Include="SaveXmlComponentVisitor.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="SetPrimaryKeyCmd.cpp" />
+    <ClCompile Include="State.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\102598041_new\ERModeSubject.h" />
+    <ClInclude Include="AddNodeState.h" />
+    <ClInclude Include="ComponentPoint.h" />
+    <ClInclude Include="ComponentVisitor.h" />
+    <ClInclude Include="ConnectState.h" />
+    <ClInclude Include="CutComponents.h" />
+    <ClInclude Include="EditNameOfComponent.h" />
+    <ClInclude Include="GUIObserver.h" />
+    <ClInclude Include="GUIPresentationSubject.h" />
+    <ClInclude Include="GUIPreviewComponentFactory.h" />
+    <ClInclude Include="MainWindowObserver.h" />
+    <ClInclude Include="MainWindowSubject.h" />
+    <ClInclude Include="MainWindowSubjectForERModel.h" />
+    <ClInclude Include="MoveComponents.h" />
+    <ClInclude Include="PasteComponents.h" />
+    <ClInclude Include="PointState.h" />
+    <ClInclude Include="PrimaryKeyState.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SaveComponentVisitor.h" />
+    <ClInclude Include="SaveXmlComponentVisitor.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="SetPrimaryKeyCmd.h" />
+    <ClInclude Include="State.h" />
+    <CustomBuild Include="GUIMainWindow.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing GUIMainWindow.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB "-IC:\gtest\include" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing GUIMainWindow.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui"</Command>
+    </CustomBuild>
+    <ClInclude Include="..\102598041_new\AddComponentCmd.h" />
+    <ClInclude Include="..\102598041_new\Attributes.h" />
+    <ClInclude Include="..\102598041_new\Command.h" />
+    <ClInclude Include="..\102598041_new\CommandManager.h" />
+    <ClInclude Include="..\102598041_new\ComponentData.h" />
+    <ClInclude Include="..\102598041_new\ComponentFactory.h" />
+    <ClInclude Include="..\102598041_new\Components.h" />
+    <ClInclude Include="..\102598041_new\ConnectComponentsCmd.h" />
+    <ClInclude Include="..\102598041_new\Connection.h" />
+    <ClInclude Include="..\102598041_new\ConnectionData.h" />
+    <ClInclude Include="..\102598041_new\Convertor.h" />
+    <ClInclude Include="..\102598041_new\DeleteComponentCmd.h" />
+    <ClInclude Include="..\102598041_new\Entity.h" />
+    <ClInclude Include="..\102598041_new\EntityData.h" />
+    <ClInclude Include="..\102598041_new\ERModel.h" />
+    <ClInclude Include="..\102598041_new\LoadFiles.h" />
+    <ClInclude Include="..\102598041_new\MessageOfConstInteger.h" />
+    <ClInclude Include="..\102598041_new\MessageOfConstString.h" />
+    <ClInclude Include="..\102598041_new\Node.h" />
+    <ClInclude Include="..\102598041_new\NullComponent.h" />
+    <ClInclude Include="..\102598041_new\ObserverTextUIInterface.h" />
+    <ClInclude Include="..\102598041_new\Presentation.h" />
+    <ClInclude Include="..\102598041_new\Relationship.h" />
+    <ClInclude Include="..\102598041_new\SaveFiles.h" />
+    <ClInclude Include="..\102598041_new\TextUI.h" />
+    <ClInclude Include="..\102598041_new\TextUIController.h" />
+    <ClInclude Include="GUIAttribute.h" />
+    <ClInclude Include="GUIComponent.h" />
+    <ClInclude Include="GUIComponentFactory.h" />
+    <ClInclude Include="GUIConnection.h" />
+    <ClInclude Include="GUIEntity.h" />
+    <ClInclude Include="GUIPresentation.h" />
+    <ClInclude Include="GUIRelationship.h" />
+    <ClInclude Include="GUIComponentManager.h" />
+    <ClInclude Include="QTConstString.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties UicDir=".\GeneratedFiles" MocDir=".\GeneratedFiles\$(ConfigurationName)" MocOptions="" RccDir=".\GeneratedFiles" lupdateOnBuild="0" lupdateOptions="" lreleaseOptions="" QtVersion_x0020_Win32="4.8.3" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
